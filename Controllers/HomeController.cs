@@ -25,11 +25,9 @@ public class HomeController : Controller
 
     public IActionResult GenerarReceta(Receta receta)
     {
-        ViewBag.nombre = receta.nombre;
-        ViewBag.fechaNacimiento = receta.fechaNacimiento;
-        ViewBag.tipoComida = receta.tipoComida;
-        ViewBag.presupuesto = receta.presupuesto;
-        ViewBag.cantPersonas = receta.cantPersonas;
+        ViewBag.plato = receta.DeterminarPlato();
+        ViewBag.tiempo = receta.CalcularTiempo();
+        ViewBag.dificultad = receta.DeterminarDificultad();
         return View("Resultado");
     }
 
