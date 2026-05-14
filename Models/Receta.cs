@@ -11,76 +11,85 @@ public class Receta
     public int CalcularEdad(){
         int edad = DateTime.Today.Year - fechaNacimiento.Year;
         if(DateTime.Today.Month > fechaNacimiento.Month && DateTime.Today.Day > fechaNacimiento.Day){
-            edad +=1
+            edad +=1;
         }
         return edad;
     }
-    public string DeterminarPlato(){
-        if(tipoComida == "caliente"){
-            if(presupuesto<3000){
+    public string DeterminarPlato(Receta r){
+        if(r.tipoComida == "caliente"){
+            if(r.presupuesto<3000){
                 return "fideos con manteca";
             }
-            else if (presupuesto>3000 && presupuesto<7000){
+            else if (r.presupuesto>=3000 && r.presupuesto<=7000){
                 return "arroz con verduras salteadas";
             }
-            else if (presupuesto>7000){
+            else{
                 return "pollo al horno con guarnicion";
             }
         }
-        else if (tipoComida == "frio"){
-            if (presupuesto<3000){
+        else{
+            if (r.presupuesto<3000){
                 return "ensalada simple";
             }
-            else if (presupuesto>3000 && presupuesto<7000){
+            else if (r.presupuesto>=3000 && r.presupuesto<=7000){
                 return "ensalada completa con proteina";
             }
-            else if (presupuesto>7000){
+            else{
                 return "tabla de fiambres y quesos";
             }
         }
     }
-    public int CalcularTiempo(){
+    public int CalcularTiempo(Receta r){
 
-        if(tipoComida== "caliente" && (cantPersonas==1 || cantPersonas == 22 || cantPersonas== 3)){
+        if(r.tipoComida=="caliente" && r.cantPersonas>=1 && r.cantPersonas<=3){
             return 20;
         }
 
-        else if ( tipoComida == "caliente" && cantPersonas >= 4 && cantPersonas <= 7){
+        else if (r.tipoComida == "caliente" && r.cantPersonas >= 4 && r.cantPersonas <= 7){
             return 40;
         }
 
-        else if (tipoComida == "caliente" && cantPersonas >= 8){
+        else if (r.tipoComida == "caliente" && r.cantPersonas >= 8){
             return 80;
         }
 
-        else if (tipoComida == "fria" &&cantPersonas>=1 && cantPersonas <=3){
+        else if (r.tipoComida == "fria" && r.cantPersonas>=1 && r.cantPersonas <=3){
             return 10;
         }
 
-        else if(tipoComida== "fria" && cantPersonas >=4 && cantPersonas <=7){
+        else if(r.tipoComida== "fria" && r.cantPersonas >=4 && r.cantPersonas <=7){
             return 20;
         }
 
-        else if(tipoComida == "fria" && cantPersonas >= 8){
+        else if(r.tipoComida == "fria" && r.cantPersonas >= 8){
             return 40;
         }
+        return 0;
     }
 
-    public string DeterminarDificultad(){
-        if(presupuesto < 3000){
-            if (cantPersonas>=1 && cantPersonas <=3){
+    public string DeterminarDificultad(Receta r){
+        if(r.presupuesto < 3000){
+            if (r.cantPersonas>=1 && r.cantPersonas <=3){
                 return "principiante";
             }
-            else if (cantPersonas >=4 || cantPersonas <=7){
+            else if (r.cantPersonas >=4 && r.cantPersonas <=7){
                 return "intermedio";
             }
         }
-        if(presupuesto >=3000 && presupuesto <=7000){
-            if(cantPersonas>=1 && cantPersonas <=3){
+        if(r.presupuesto >=3000 && r.presupuesto <=7000){
+            if(r.cantPersonas>=1 && r.cantPersonas <=3){
                 return "intermedio";
             }
-            else if (cantPersonas>=4 && cantPersonas<=7){
+            else{
                 return "intermedio";
+            }
+        }
+        else{
+            if(r.cantPersonas>=1 && r.cantPersonas<=7){
+                return "intermedio";
+            }
+            else{
+                return "avanzado";
             }
         }
     }
@@ -93,17 +102,6 @@ public class Receta
         }
         else{
             return "Buenas noches";
-        }
-    }
-    public string GenerarTip(){
-        if (edad < 18){
-            return "Por favor, tenga cuidado.";
-        }
-        else if (edad >= 60){
-            return "DALE BO, DALE BO, este año ganamos la séptima."
-        }
-        else{
-            return "Dale que se puede!";
         }
     }
 }

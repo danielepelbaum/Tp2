@@ -23,14 +23,15 @@ public class HomeController : Controller
         return View();
     }
 
-    public IActionResult GenerarReceta(Receta receta)
+    public IActionResult GenerarReceta(Receta r)
     {
-        ViewBag.plato = receta.DeterminarPlato();
-        ViewBag.tiempo = receta.CalcularTiempo();
-        ViewBag.dificultad = receta.DeterminarDificultad();
-        ViewBag.edad = receta.CalcularEdad();
-        ViewBag.nombre = receta.nombre;
-        ViewBag.cantPersonas = receta.cantPersonas;
+        ViewBag.plato = r.DeterminarPlato(r);
+        ViewBag.tiempo = r.CalcularTiempo(r);
+        ViewBag.dificultad = r.DeterminarDificultad(r);
+        ViewBag.edad = r.CalcularEdad();
+        ViewBag.nombre = r.nombre;
+        ViewBag.cantPersonas = r.cantPersonas;
+        ViewBag.saludo = r.GenerarSaludo();
         return View("Resultado");
     }
 
