@@ -28,6 +28,9 @@ public class HomeController : Controller
         ViewBag.plato = receta.DeterminarPlato();
         ViewBag.tiempo = receta.CalcularTiempo();
         ViewBag.dificultad = receta.DeterminarDificultad();
+        ViewBag.edad = receta.CalcularEdad();
+        ViewBag.nombre = receta.nombre;
+        ViewBag.cantPersonas = receta.cantPersonas;
         return View("Resultado");
     }
 
