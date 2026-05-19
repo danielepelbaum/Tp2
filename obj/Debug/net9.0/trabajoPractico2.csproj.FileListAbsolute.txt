@@ -22,7 +22,6 @@ Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\rjsmcshtml.dswa.cache.json
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\scopedcss\bundle\trabajoPractico2.styles.css
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\scopedcss\projectbundle\trabajoPractico2.bundle.scp.css
-Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\compressed\1zui2y56ad-b9sayid5wm.gz
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\compressed\hxdxhth5c7-61n19gt1b8.gz
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\compressed\9xlzteave6-xtxxf3hu2r.gz
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\compressed\jpi98uq2to-bqjiyaj88i.gz
@@ -95,3 +94,4 @@ Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\refint\trabajoPractico2.dll
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\trabajoPractico2.pdb
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\trabajoPractico2.genruntimeconfig.cache
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\ref\trabajoPractico2.dll
+Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\compressed\1zui2y56ad-85byusdcvs.gz
