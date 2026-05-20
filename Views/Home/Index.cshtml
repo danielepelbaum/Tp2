@@ -4,13 +4,13 @@
 <body>
     <section>
         <form action='@Url.Action("GenerarReceta", "Home")' method="POST">
-            Nombre: <input type="text" name="nombre"><br/>
-            Fecha de nacimiento: <input type="date" name="fechaNacimiento"><br/>
+            Nombre: <input class="caja" type="text" name="nombre"><br/>
+            Fecha de nacimiento: <input class="caja" type="date" name="fechaNacimiento"><br/>
             Tipo de comida:<br/>
             <input type="radio" name="tipoComida" value="caliente"> Caliente<br/>
             <input type="radio" name="tipoComida" value="frio"> Frío<br/>
-            Presupuesto (en pesos): $<input type="number" name="presupuesto"><br/>
-            Cantidad de personas: <input type="number" name="cantPersonas"><br/>
+            Presupuesto (en pesos): $<input class="caja" type="number" name="presupuesto"><br/>
+            Cantidad de personas: <input class="caja"type="number" name="cantPersonas"><br/>
             <button type="submit">Enviar</button>
         </form>
     </section>
