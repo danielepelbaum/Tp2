@@ -94,4 +94,4 @@ Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\refint\trabajoPractico2.dll
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\trabajoPractico2.pdb
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\trabajoPractico2.genruntimeconfig.cache
 Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\ref\trabajoPractico2.dll
-Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\compressed\1zui2y56ad-29alasurot.gz
+Z:\2026\prog\trabajoPractico2\obj\Debug\net9.0\compressed\1zui2y56ad-y43ecbbeq4.gz
